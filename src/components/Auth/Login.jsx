@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import apiClient from "../../Service/apiClient";
 import { Link } from "react-router-dom";
+
 const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
 
@@ -23,6 +24,7 @@ const Login = () => {
 
   return (
     <>
+  
       <h1 className="text-2xl font-bold text-center pt-10">Login Page</h1>
       <form
         onSubmit={handleSubmit}

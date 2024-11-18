@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const MessageList = () => {
-  return (
-    <div>MessageList</div>
-  )
-}
+const MessageList = ({ messages }) => {
+    return (
+        <div>
+            <h2>Messages</h2>
+            <ul>
+              
+            </ul>
+        </div>
+    );
+};
 
-export default MessageList
+export default MessageList;
