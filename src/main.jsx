@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/Auth/login.jsx";
 import Register from "./components/Auth/Register.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import Messenger from "./components/Message/Messenger.jsx";
 
 const router = createBrowserRouter(
   [
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
     element: <App />,
     children: [
       {
+        index:true,
         path: "login",
         element: <Login />,
       },
@@ -24,6 +26,10 @@ const router = createBrowserRouter(
       {
         path:"dashboard",
         element: <Dashboard />
+      },
+      {
+        path:"messenger",
+        element: <Messenger />      
       }
     ]
   },

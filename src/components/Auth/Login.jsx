@@ -13,7 +13,10 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await apiClient.post("/users/login", formData);
+      console.log(res.data);
+      
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("id", res.data.id);
       alert("Login successful");
       window.location.href = "/dashboard";
     } catch (err) {
